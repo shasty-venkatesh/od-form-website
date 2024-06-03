@@ -1,0 +1,19 @@
+{
+  "name": "od-and-leave-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "shasty",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.6",
+    "nodemon": "^3.1.0"
+  }
+}

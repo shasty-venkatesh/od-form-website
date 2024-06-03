@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DFF5FF;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #77bbcf;
+    /* mild blue background color */
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #232471;
+    margin-left: -100px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: -100px;
+    background-color: #0090bc;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+.back-button:hover {
+    background-color: #306a7c;
+}
+
+main {
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2,
+form h2 {
+    margin-bottom: 10px;
+    color: #0f1d2e;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0f1d2e;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="number"],
+input[type="date"],
+input[type="select"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #0f6072;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: large;
+}
+
+button[type="submit"]:hover {
+    background-color: #195364;
+}

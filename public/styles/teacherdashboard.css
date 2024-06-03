@@ -1,0 +1,10 @@
+main  .card{
+    
+    height: 270px;
+}
+main .min_od .button,main .max_od .button{
+    display: block;
+    margin:10px 250px;
+    padding: 10px;
+    height: 30px;
+}

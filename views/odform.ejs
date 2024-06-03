@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMBUDDY | ODFORM</title>
+    <link rel="stylesheet" href="/public/styles/odform.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OD Form</h1>
+            <a href="/back" class="back-button">Back</a>
+        </div>
+    </header>
+    <main>
+        <% if(error!=null) {%>
+            <script>alert("<%=error%>")</script>
+            <% } %>
+        <div class="container">
+            <section>
+                <h2>Student Information</h2>
+                <form action="/dashboard" method="POST" id="odForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="studentName">Name of the student:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department of the student:</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year:</label>
+                        <input type="number" id="year" name="year" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="semester">Semester:</label>
+                        <input type="number" id="semester" name="semester" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="section">Section:</label>
+                        <input type="text" id="section" name="section" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numberofod">Number of OD :</label>
+                        <input type="number" id="numberofod" name="numberofod" required>
+                    </div>
+                    <h2>Reason For OD</h2>
+                    <div class="form-group">
+                        <label for="collegename">Venue :</label>
+                        <input type="text" id="collegename" name="collegename" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mentorname">Mentor name :</label>
+                        <input type="text" id="mentorname" name="mentorname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventname">Event name :</label>
+                        <select name="eventname" id="eventname">
+                            <option value="hackthon">Hackthon</option>
+                            <option value="ideathon">Ideathon</option>
+                            <option value="paper presentation">Paper presentation</option>
+                            <option value="workshop">Workshop</option>
+                            <option value="coding contest">Coding contest</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="broucherScreenshot">PDF of Broucher Screenshot and Payment Screenshot::</label>
+                        <input type="file" id="broucherScreenshot" name="Screenshot"  required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

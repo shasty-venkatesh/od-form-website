@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMBUDDY | STUDENTDETAILS</title>
+  <link rel="stylesheet" href="/public/styles/studentdetail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Sudent Detail</h1>
+  </header>
+  <main>
+    <div class="background"></div>
+    <section>
+      <div>
+        <h1>Student details</h1>
+        <ul>
+          <li>Name : <%= detail.name %></li>
+          <li>Department :  <%= detail.dept %></li>
+          <li>Year :  <%= detail.year %></li>
+          <li>Semester : <%= detail.semester %></li>
+          <li>Section :  <%= detail.section%></li>
+          <li>Number of OD:<%= detail.numberofod %></li>
+        </ul>
+        <h1>Reason for OD</h1>
+        <ul>
+          <li>College Name : <%= detail.collegename %></li>
+          <li>Mentor Name :  <%= detail.mentorname %></li>
+          <li>Competition Name :  <%= detail.eventname %></li>
+          <li><a href="/<%=detail.filepath %>">view brochure and paymentdetails</a></li>
+        </ul>
+        <h1>Approval Status</h1>
+        <ul>
+          <li>Class Advisor : <%= detail.odstatus.classadvisor %></li>
+          <li>Department of Innovation Head :  <%=detail.odstatus.dih %></li>
+          <li>Head of Department :  <%= detail.odstatus.hod %></li>
+          <li>Innovation Head :  <%= detail.odstatus.ih %></li>
+          <li>CFRD :  <%= detail.odstatus.curd %></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMBUDDY | STUDENTS DASHBOARD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="public/styles/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <h1>STUDENT DASHBOARD</h1>
+        <a href="/back" class="button">Logout</a>
+
+    </header>
+    
+    <main>
+        <div class="background"></div>
+        <% if(totalod==0) {%>
+        <section class="no_od">
+            <p>No on-duty request received yet!!</p>
+            <a href="/odform">Apply more OD</a>
+        </section>
+        <% } %>
+        <% if (totalod>0&& totalod<7) {%>
+            <section class="min_od">
+                <h1 class="title">Student's OD applications</h1>
+            <% for(const od of detail.od ) {%>
+            <div class="card">
+                <h1><%= od.name %></h1>
+                <p class="Context_name"><%= od.eventname %></p>
+                <p class="college_name"><%= od.collegename %></p>
+                <a href="/studentdetail/:<%= od._id %>">more details</a>
+            </div>
+        <% } %>
+        <a href="/odform" class="button">Apply more OD</a>
+        </section>
+        <% } %>
+        <% if(totalod>=7) {%>
+        <section class="max_od">
+            <h1 class="title">Student's OD applications</h1>
+            <% for(const od of detail.od ) {%>
+            <div class="card">
+                <h1><%= od.name %></h1>
+                <p class="Context_name"><%= od.eventname %></p>
+                <p class="college_name"><%= od.collegename %></p>
+                <a href="/studentdetail/:<%= od._id %>">more details</a>
+            </div>
+            <% } %>
+        </section>
+    <% } %>
+    </main>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+    text-align: center;
+    background-color: #DFF5FF;
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #77bbcf;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 10px 20px;
+    color: #232471;
+}
+
+header a {
+    background-color: #0090bc;
+    border-radius: 5px;
+    margin: 10px;
+    width: auto;
+    margin-top: 10px;
+    padding: 10px;
+    height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 300;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0%;
+    width: 100%;
+    height: 150%; 
+    background-image: url('https://th.bing.com/th/id/OIP.DVlVJmd505PsY3eEtsJeXAHaE7?w=1400&h=933&rs=1&pid=ImgDetMain');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    filter: blur(5px); 
+    z-index: -1; 
+}
+header a :hover{
+    background-color: #4299b3
+}
+main{
+    margin-top: 100px;
+}
+
+main a {
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    padding: 7px;
+    font-size: larger;
+    color: #DFF5FF;
+    background-color: #234a71;
+    text-decoration: none;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+main a :hover{
+    background-color: #516377
+}
+main{
+    font-family: 'Exo 2',sans-serif;
+}
+main .no_od{
+    display: block;
+}
+main .no_od p{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #030433;
+}
+main .no_od a{
+    margin-top: 70px;
+}
+main .min_od,main .max_od{
+    display: block;
+}
+
+main .min_od .title,main .max_od .title{
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #030433;
+}
+
+main  div,main  div{
+    width: 700px;
+    height: 200px;
+    background-color: #98ccdb;
+    margin: 20px 0 20px 350px ;
+    border-radius: 8px;
+}
+main .min_od .card  h1,main .max_od .card h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #030433;
+    margin-bottom: -10px;
+    padding: 10px 5px 5px 5px;
+}
+main .min_od .card .Context_name,main .max_od .card  .Context_name{
+    font-size: large;
+    padding: 5px;
+    margin-top: 15px;
+    color: #124664;
+    font-weight: 600;
+}
+main .min_od .card .college_name,main .max_od .card .college_name{
+    font-size: large;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #124664;
+    font-weight: 600;
+}
+main .min_od .button,main .max_od .button{
+    display: block;
+    margin-left: 610px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+}

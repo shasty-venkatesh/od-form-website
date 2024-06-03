@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMBUDDY | TEACHER DASHBOARD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="/public/styles/dashboard.css">
+    <link rel="stylesheet" href="/public/styles/teacherdashboard.css">
+   
+   
+</head>
+
+<body>
+    <header>
+        <h1>Teacher's Dashboard</h1>
+        <a href="/back">Logout</a>
+    </header>
+    <main>
+        <div class="background"></div>
+        <% if(totalod==0) {%>
+        <section class="no_od">
+            <p>No on-duty request received yet!! </p>
+        </section>
+        <% } %>
+        <% if(totalod>0){ %>
+                <h1 class="title">Student's OD applications</h1>
+            <% for(const od of data){ %>
+                <% for (const od1 of od.od){ %>
+                    <section class="min_od">
+            <div class="card">
+                <h1><%= od1.name %></h1>
+                <p class="Context_name"><%= od1.eventname %></p>
+                <p class="college_name"><%= od1.collegename%></p>
+                <a href="/studentdetail/:<%= od1._id %>" class="button">more details</a>
+                <a href="/approval/:<%= od1._id %>" class="button">Approval</a></div>
+        </section>
+        <% } %>
+        <% } %>
+        <% } %>
+    </main>
+</body>
+
+</html>

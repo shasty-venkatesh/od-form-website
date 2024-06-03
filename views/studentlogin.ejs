@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMBUDDY | STUDENT LOGIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/public/styles/login.css">    
+</head>
+
+<body>
+    
+    <header>
+        <h1>Student Login</h1>
+        <a href="/back" class="button">back</a>
+    </header>
+    <main>
+        <div class="background"></div>
+        <div>
+            <% if(error!=null) {%>
+                <script>alert("<%=error%>")</script>
+                <% } %>
+            <form action="/studentdashboard" method="POST">
+                <label for="name">your name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+                <label for="email">your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+                <label for="register_number">your register number:</label><br>
+                <input type="text" id="register_number" name="register_number" placeholder="Register number.."
+                    required><br>
+                <label for="password">your password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Password.." required><br>
+                <div>
+                    <input type="submit" value="Login" class="button">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMBUDDY | APPROVAL</title>
+    <link rel="stylesheet" href="/public/styles/approval.css">
+</head>
+
+<body>
+    <header>
+        <h1>Approval</h1>
+        <a href="/back" class="button">Back</a>
+    </header>
+    <main>
+        <div class="background"></div>
+                <div>
+                    <p>Class Advisor</p>
+                    <% if (status1.odstatus.classadvisor==='approved' ){ %>
+                        <p>Approved</p>
+                    <% } %>
+                    <%if (status1.odstatus.classadvisor==='disapproved') {%>
+                        <p>Disapproved</p>
+                    <% } %>
+                    <%if (status1.odstatus.classadvisor==='pending' ){%>
+                    <form action="/approval1/:<%= status1._id %>" id="approval1" method="post">
+                        <select name="approvalstatus" id="approval" required>
+                            <option selected value="pending">pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="disapproved"> Disapproved</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form> <% } %>
+                </div>
+                <div>
+                    <p>Department of Innovation Head</p>
+                    <% if (status1.odstatus.dih==='approved' ){ %>
+                        <p>Approved</p>
+                    <% } %>
+                    <%if (status1.odstatus.dih==='disapproved') {%>
+                        <p>Disapproved</p>
+                    <% } %>
+                    <%if (status1.odstatus.dih==='pending' ){%>
+                    <form action="/approval2/:<%= status1._id %>" id="approval1" method="post">
+                        <select name="approvalstatus" id="approval" required>
+                            <option selected value="pending">pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="disapproved"> Disapproved</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form> <% } %>
+                </div>
+                <div>
+                    <p>Head of Department</p>
+                    <% if (status1.odstatus.hod==='approved' ){ %>
+                        <p>Approved</p>
+                    <% } %>
+                    <%if (status1.odstatus.hod==='disapproved') {%>
+                        <p>Disapproved</p>
+                    <% } %>
+                    <%if (status1.odstatus.hod==='pending' ){%>
+                    <form action="/approval3/:<%= status1._id %>" id="approval1" method="post">
+                        <select name="approvalstatus" id="approval" required>
+                            <option selected value="pending">pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="disapproved"> Disapproved</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form> <% } %>
+                </div>
+                <div>
+                    <p>Innovation Head</p>
+                    <% if (status1.odstatus.ih==='approved' ){ %>
+                        <p>Approved</p>
+                    <% } %>
+                    <%if (status1.odstatus.ih==='disapproved') {%>
+                        <p>Disapproved</p>
+                    <% } %>
+                    <%if (status1.odstatus.ih==='pending' ){%>
+                    <form action="/approval4/:<%= status1._id %>" id="approval1" method="post">
+                        <select name="approvalstatus" id="approval" required>
+                            <option selected value="pending">pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="disapproved"> Disapproved</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form> <% } %>
+                </div>
+                <div>
+                    <p>CFRD</p>
+                    <% if (status1.odstatus.curd==='approved' ){ %>
+                        <p>Approved</p>
+                    <% } %>
+                    <%if (status1.odstatus.curd==='disapproved') {%>
+                        <p>Disapproved</p>
+                    <% } %>
+                    <%if (status1.odstatus.curd==='pending' ){%>
+                    <form action="/approval5/:<%= status1._id %>" id="approval1" method="post">
+                        <select name="approvalstatus" id="approval" required>
+                            <option selected value="pending">pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="disapproved"> Disapproved</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form> <% } %>
+                </div>
+    </main>
+</body>
+
+</html>
