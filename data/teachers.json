@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Dr. Robert Brown",
+    "email": "robert.brown@teacher.com",
+    "password": "teacher123"
+  },
+  {
+    "name": "Mrs. Sarah Wilson",
+    "email": "sarah.wilson@teacher.com",
+    "password": "teacher456"
+  },
+  {
+    "name": "Mr. David Miller",
+    "email": "david.miller@teacher.com",
+    "password": "teacher789"
+  }
+]

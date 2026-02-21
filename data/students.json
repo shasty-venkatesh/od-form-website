@@ -1,0 +1,85 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@student.com",
+    "password": "student123",
+    "od": [
+      {
+        "_id": "abc123def",
+        "name": "John Doe",
+        "dept": "Computer Science",
+        "year": "3rd Year",
+        "semester": "6th Semester",
+        "section": "A",
+        "numberofod": "2",
+        "collegename": "Tech University",
+        "mentorname": "Mrs. Smith",
+        "eventname": "Tech Workshop 2024",
+        "filepath": "files/screenshot1.jpg",
+        "odstatus": {
+          "_id": "stat001",
+          "classadvisor": "approved",
+          "dih": "pending",
+          "hod": "pending",
+          "ih": "pending",
+          "curd": "pending"
+        }
+      },
+      {
+        "_id": "abc123deg",
+        "name": "John Doe",
+        "dept": "Computer Science",
+        "year": "3rd Year",
+        "semester": "6th Semester",
+        "section": "A",
+        "numberofod": "1",
+        "collegename": "Tech University",
+        "mentorname": "Mrs. Smith",
+        "eventname": "Coding Competition",
+        "filepath": "files/screenshot2.jpg",
+        "odstatus": {
+          "_id": "stat002",
+          "classadvisor": "pending",
+          "dih": "pending",
+          "hod": "pending",
+          "ih": "pending",
+          "curd": "pending"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@student.com",
+    "password": "student456",
+    "od": [
+      {
+        "_id": "xyz789ghi",
+        "name": "Jane Smith",
+        "dept": "Information Technology",
+        "year": "2nd Year",
+        "semester": "4th Semester",
+        "section": "B",
+        "numberofod": "1",
+        "collegename": "Tech University",
+        "mentorname": "Mr. Johnson",
+        "eventname": "Hackathon 2024",
+        "filepath": "files/screenshot3.jpg",
+        "odstatus": {
+          "_id": "stat003",
+          "classadvisor": "approved",
+          "dih": "approved",
+          "hod": "pending",
+          "ih": "pending",
+          "curd": "pending"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mike Johnson",
+    "email": "mike.johnson@student.com",
+    "password": "student789",
+    "od": []
+  }
+]
